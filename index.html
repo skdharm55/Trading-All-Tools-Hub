@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[ [ DK TADER HUB Pro ] ] - Professional Trading Dashboard</title>
+    <title>[ [ DK TADER HUB ] ] - Professional Trading Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -1042,6 +1042,19 @@
                 alert('Notes exported as PDF successfully!');
             });
         });
-    </script>
+        
+</script>
+<!-- Auto Update Version Alert -->
+<script>
+const currentVersion = "1.0.1"; // 👈 ये तुम्हारे ऐप का वर्तमान वर्ज़न है
+fetch("https://skdharm55.github.io/Trading-All-Tools-Hub/version.json")
+  .then(res => res.json())
+  .then(data => {
+    if (data.version !== currentVersion) {
+      alert("🆕 नया अपडेट उपलब्ध है! कृपया ऐप को रिफ्रेश करें।");
+    }
+  })
+  .catch(() => console.log("वर्ज़न चेक असफल रहा"));
+
 </body>
-  </html>
+    </html>
